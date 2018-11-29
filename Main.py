@@ -1,13 +1,16 @@
-from SimpleCV import Camera
-# Initialize the camera
-cam = Camera()
-# Loop to continuously get images
-while True:
-    # Get Image from camera
-    img = cam.getImage()
-    # Make image black and white
-    img = img.binarize()
-    # Draw the text "Hello World" on image
-    img.drawText("Hello World!")
-    # Show the image
-    img.show()
+from tkinter import *
+
+root = Tk()
+
+canvas = Canvas(root, width=800, height=500)
+canvas.pack()
+
+square = canvas.create_rectangle(50, 50, 100, 100, fill="red")
+
+class Square:
+
+
+
+root.mainloop()
+
+
