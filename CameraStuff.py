@@ -10,11 +10,13 @@ while True:
     # Get Image from camera
     img = cam.getImage()
     img.show()
+    test=
 
 
     #find blobs
     blobs = img.findBlobs()
     blobs.draw()
+
     img.show()
     # areaAvg = np.mean(blobs.area)
     # areaStd = np.std(blobs.area)
