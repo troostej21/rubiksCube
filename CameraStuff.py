@@ -1,29 +1,22 @@
-from SimpleCV import Image, Display, Color, Camera
+from PIL import Image
+import os
+import numpy as np
+import matplotlib.pyplot as plt
+import time
+
+i = Image.open('res/testCube.png')  #all[rows[pixels(r g b alph)]]
+iArr = np.asarray(i)
+print(iArr)
+
+plt.imshow(iArr)
+plt.show()
 
 
-var = []
-
-# Initialize the camera
-cam = Camera()
-# Loop to continuously get images
-while True:
-    # Get Image from camera
-    img = cam.getImage()
-    img.show()
-    test=
+def threshold(imageArray):
+    balanceArr = []
 
 
-    #find blobs
-    blobs = img.findBlobs()
-    blobs.draw()
-
-    img.show()
-    # areaAvg = np.mean(blobs.area)
-    # areaStd = np.std(blobs.area)
-
-    #find color
-
-
+#part 6 is where i diverge
 
 
 
