@@ -17,6 +17,7 @@ def threshold(imageArray):
 
 
 #part 6 is where i diverge
+#ppappap
 
 
 
