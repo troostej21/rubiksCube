@@ -19,7 +19,7 @@ def threshold(imgArray):
 
     for eachRow in newArr:
         for eachPix in eachRow:
-            if mean(eachPix[:3]) == 255: ## white condition
+            if mean(eachPix[:3]) > balance:
                 eachPix[0] = 255
                 eachPix[1] = 255
                 eachPix[2] = 255
